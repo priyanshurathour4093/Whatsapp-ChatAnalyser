@@ -87,11 +87,3 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Future Add-ons (Optional)
-
-- Sentiment analysis per user  
-- Response time tracking  
-- Conversation segmentation by topic  
-- Live chat ingestion  
-
----
