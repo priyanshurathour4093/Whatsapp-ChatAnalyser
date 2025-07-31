@@ -33,8 +33,20 @@ This tool helps you break down the hidden patterns in your WhatsApp conversation
 
 ## 🚀 Try It Locally
 
-### 1. Clone the repository
+## 🚀 How to Run
+
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/whatsapp-chat-analyzer.git
+git clone https://github.com/yourusername/whatsapp-chat-analyzer.git
 cd whatsapp-chat-analyzer
-```Install Dependencies
+2. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3. Start the App
+bash
+Copy
+Edit
+streamlit run app.py
