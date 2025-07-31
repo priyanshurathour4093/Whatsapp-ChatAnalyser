@@ -1,37 +1,24 @@
+
 # 📊 WhatsApp Chat Analyzer
 
-A Streamlit-based web app that lets you upload your WhatsApp chat exports and instantly visualize detailed insights — from message counts and timelines to emoji usage and word clouds.
-
-![Streamlit Screenshot](https://your-screenshot-link-if-any.png)
+A Streamlit-based tool to uncover insights from your exported WhatsApp chats. Upload a `.txt` file, pick a user, and get instant visual analysis — messages, words, emojis, timelines, and more.
 
 ---
 
-## 🔍 What It Does
+## 🔍 Features
 
-This tool helps you break down the hidden patterns in your WhatsApp conversations:
-
-- 🧮 **Top Stats**: Total messages, word count, media shared, and links.
-- 📆 **Timelines**: Monthly and daily message activity.
-- 📈 **Activity Maps**: Busiest days, months, and hours — with heatmaps.
-- 🗣️ **Most Active Users**: Message counts and percentages (for group chats).
-- ☁️ **WordCloud**: Most frequent non-stop words used.
-- 📋 **Common Words**: Top 20 most used words.
-- 😂 **Emoji Analysis**: Which emojis show up most, with a pie chart.
-- 📎 **Link Detection**: Count of shared URLs.
-
----
-
-## 🛠️ How It Works
-
-1. **Upload** your exported `.txt` WhatsApp chat file.
-2. **Choose** a user or analyze the full group.
-3. **Click "Show Analysis"** — and get instant visual stats.
-
-> Group system messages (e.g., “User left”) are automatically filtered out.
+- **Total Stats**: Messages, words, media, links  
+- **Monthly & Daily Timeline**: Track chat activity over time  
+- **Activity Maps**:  
+  - Busiest days and months  
+  - Hourly heatmap  
+- **Most Active Users**: Top contributors in group chats  
+- **WordCloud**: Most frequent words (after removing Hinglish stopwords)  
+- **Most Common Words**: Top 20 words used  
+- **Emoji Analysis**: Most-used emojis with pie chart  
+- **URL Tracking**: Total links shared  
 
 ---
-
-## 🚀 Try It Locally
 
 ## 🚀 How to Run
 
@@ -40,13 +27,71 @@ This tool helps you break down the hidden patterns in your WhatsApp conversation
 ```bash
 git clone https://github.com/yourusername/whatsapp-chat-analyzer.git
 cd whatsapp-chat-analyzer
-2. Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-3. Start the App
-bash
-Copy
-Edit
+```
+
+### 3. Start the App
+
+```bash
 streamlit run app.py
+```
+
+The app will open in your browser. Upload the exported WhatsApp `.txt` file and explore.
+
+---
+
+## 📁 Project Structure
+
+```
+📦 whatsapp-chat-analyzer/
+├── app.py              # Main Streamlit frontend
+├── helper.py           # All feature logic (stats, charts, etc.)
+├── preprocessor.py     # Message parsing and timestamp formatting
+├── stop_hinglish.txt   # Stop words used in word cloud filtering
+├── requirements.txt    # Python packages needed
+└── Procfile            # For deployment (e.g., on Heroku)
+```
+
+---
+
+## 📝 How to Export WhatsApp Chat
+
+1. Open a chat on WhatsApp (mobile)  
+2. Tap ⋮ > More > Export Chat  
+3. Choose **Without Media**  
+4. It generates a `.txt` file — upload it in the app  
+
+---
+
+## 📦 Dependencies
+
+This project uses:
+
+- streamlit  
+- matplotlib  
+- seaborn  
+- pandas  
+- emoji  
+- wordcloud  
+- urlextract  
+
+Install them with:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🧠 Future Add-ons (Optional)
+
+- Sentiment analysis per user  
+- Response time tracking  
+- Conversation segmentation by topic  
+- Live chat ingestion  
+
+---
