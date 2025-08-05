@@ -54,7 +54,6 @@ The app will open in your browser. Upload the exported WhatsApp `.txt` file and 
 ├── preprocessor.py     # Message parsing and timestamp formatting
 ├── stop_hinglish.txt   # Stop words used in word cloud filtering
 ├── requirements.txt    # Python packages needed
-└── Procfile            # For deployment (e.g., on Heroku)
 ```
 
 ---
